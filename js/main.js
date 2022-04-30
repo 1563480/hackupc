@@ -40,9 +40,10 @@ $(document).ready(()=>{
         $("#winHtml").show();
         $(".fireworks").show();
         clearInterval(counter);
-        var puntFinal = scoreCalculation(nTry,counter,true);
+        var puntFinal = scoreCalculation(nTry,ct,true);
         $("#yourScore").html("<h3>Your score is: " + puntFinal+"</h3>");
         $("#countryReveal").html("<h3>The country was "+auxiliar[enteroAleatorio]['country']);
+        $("#maxScore").html("<h3>Best score: " + bestScore(puntFinal)+"</h3>");
         $("#winHtml button").click(()=>{
             location.reload();
         });
@@ -73,9 +74,10 @@ $(document).ready(()=>{
             $("#container").html($("#loseHtml"));
             $("#loseHtml").show();
             clearInterval(counter);
-            var puntFinal = scoreCalculation(nTry,counter,false);
+            var puntFinal = scoreCalculation(nTry,ct,false);
             $("#yourScore").html("<h3>Your score is: " + puntFinal+"</h3>");
             $("#countryReveal").html("<h3>The country was "+auxiliar[enteroAleatorio]['country'])
+            $("#maxScore").html("<h3>Best score: " + bestScore(puntFinal)+"</h3>");
             $("#loseHtml button").click(()=>{
                 location.reload();
             });
@@ -103,16 +105,7 @@ $(document).ready(()=>{
     function scoreCalculation(tries,cont,isCorrect){
         if(isCorrect){
             var varTiempo;
-            if (cont < 40) {
-                varTiempo = 12;
-            } else if(cont < 80) {
-                varTiempo = 24;
-            } else if(cont < 120) {
-                varTiempo = 39;
-            } else {
-                varTiempo = 67;
-            }
-
+            varTiempo=parseInt(500/cont);
             var puntInicial;
         
             switch(tries) {
@@ -135,12 +128,25 @@ $(document).ready(()=>{
                     puntInicial = 0; 
                     break;
         }
-            return puntInicial - varTiempo;
+            return puntInicial + varTiempo;
         }else{
             return 0;
         }
     }
 
+    function bestScore(actualPoints){
+        if (localStorage.getItem("maxScore")!=undefined){
+            if(localStorage.getItem("maxScore")<actualPoints){
+                localStorage.setItem("maxScore", actualPoints);
+                return actualPoints;
+            }else{
+                return localStorage.getItem("maxScore");
+            }
+        }else{
+            localStorage.setItem("maxScore", actualPoints);
+            return actualPoints;
+        }
+    }
     
 });
 
