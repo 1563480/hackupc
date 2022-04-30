@@ -1,18 +1,19 @@
 "use strict"
 
 const diccionario = {
-    "0": "habitants",
+    "0": "residents",
     "1": "continent",
-    "2": "costa",
+    "2": "coast",
     "3": "AAAAA",
-    "4": "inicial"
+    "4": "initial"
 }
 
 $(document).ready(()=>{
 
     function generateRandomNum(){
         let inicio = 0;
-        let fin = 6;
+        let fin = 16;
+        
         return inicio + Math.floor(Math.random()*fin);
     }
 
@@ -22,7 +23,7 @@ $(document).ready(()=>{
     
     $('.hints').hide();
     $('#hint0').show();
-    $("#pregunta"+nTry).text(auxiliar["Preguntas"][nTry] + auxiliar[enteroAleatorio][diccionario[nTry]]);
+    $("#pregunta"+nTry).text(auxiliar["Preguntas"][nTry] + auxiliar[enteroAleatorio][diccionario[nTry]] + "?");
 
     function correctAnswer(){
         alert("a");
@@ -42,7 +43,7 @@ $(document).ready(()=>{
                 $("#pregunta"+nTry).text(auxiliar["Preguntas"][nTry][1]);
             }
         }else{
-            $("#pregunta"+nTry).text(auxiliar["Preguntas"][nTry] + auxiliar[enteroAleatorio][diccionario[nTry]]);
+            $("#pregunta"+nTry).text(auxiliar["Preguntas"][nTry] + auxiliar[enteroAleatorio][diccionario[nTry]] + "?");
 
         }
         

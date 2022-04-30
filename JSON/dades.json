@@ -1,65 +1,130 @@
 var auxiliar = {
     "0":{
-        "country" : "Spain", 
-        "capital": "Madrid",
-        "habitants": 47.35 ,
-        "continent": "Europa",
-        "costa": 0,
-        "inicial" : "M",  
+        "country" : "Spain",         
+        "residents": 47.35 ,
+        "continent": "Europe",
+        "coast": 0,
+        "initial" : "M",  
     } ,
     
     "1":{
-        "country": "Uruguay",
-        "capital": "Montevideo",
-        "habitants": 3.474 ,
-        "continent": "Amèrica del sur",
-        "costa": 1,
-        "inicial" : "M",         
+        "country": "Uruguay",        
+        "residents": 3.474 ,
+        "continent": "South America",
+        "coast": 1,
+        "initial" : "M",         
     } ,
 
     "2":{
-        "country": "Estonia", 
-        "capital": "Tallin",
-        "habitants": 1.331 ,
-        "continent": "Europa",
-        "costa": 1,
-        "inicial" : "T"
+        "country": "Estonia",         
+        "residents": 1.331 ,
+        "continent": "Europe",
+        "coast": 1,
+        "initial" : "T"
     } , 
 
     "3":{
-        "country": "Italy",
-        "capital": "Roma",
-        "habitants": 59.55 ,
-        "continent": "Europa",
-        "costa": 1,
-        "inicial" : "R"
+        "country": "Italy",        
+        "residents": 59.55 ,
+        "continent": "Europe",
+        "coast": 1,
+        "initial" : "R"
     } , 
 
     "4":{
-        "country": "Japan",
-        "capital": "Tokio",
-        "habitants": 125.8 ,
+        "country": "Japan",        
+        "residents": 125.8 ,
         "continent": "Asia",
-        "costa": 1,
-        "inicial" : "T"
+        "coast": 1,
+        "initial" : "T"
     },
     "5":{
-        "country": "Chad",
-        "capital": "Yamena",
-        "habitants": 16.43,
+        "country": "Chad",        
+        "residents": 16.43,
         "continent": "Africa",
-        "costa": 0,
-        "inicial" : "Y"
+        "coast": 0,
+        "initial" : "Y"
     },
+    "6":{
+        "country": "Mongolia",        
+        "residents": 3.278,
+        "continent": "Asia",
+        "coast": 0,
+        "initial" : "U"
+    },
+    "7":{
+        "country": "Canada",        
+        "residents": 38.01,
+        "continent": "North America",
+        "coast": 1,
+        "initial" : "O"
+    },
+    "8":{
+        "country": "Brazil",        
+        "residents": 212.6,
+        "continent": "South America",
+        "coast": 1,
+        "initial" : "B"
+    },
+    "9":{
+        "country": "Puerto Rico",        
+        "residents": 3.194,
+        "continent": "North America",
+        "coast": 1,
+        "initial" : "S"
+    },
+    "10":{
+        "country": "Belgium",        
+        "residents": 11.56,
+        "continent": "Europe",
+        "coast": 1,
+        "initial" : "B"
+    },
+    "11":{
+        "country": "Australia",        
+        "residents": 25.69,
+        "continent": "Oceania",
+        "coast": 1,
+        "initial" : "C"
+    },
+    "12":{
+        "country": "Indonesia",        
+        "residents": 273.5,
+        "continent": "Asia",
+        "coast": 1,
+        "initial" : "J"
+    },
+    "13":{
+        "country": "Nigeria",        
+        "residents": 206.1,
+        "continent": "Africa",
+        "coast": 1,
+        "initial" : "A"
+    },
+    "14":{
+        "country": "Sudan",        
+        "residents": 43.85,
+        "continent": "Africa",
+        "coast": 1,
+        "initial" : "K"
+    },
+    "15":{
+        "country": "Mali",        
+        "residents": 20.25,
+        "continent": "Africa",
+        "coast": 0,
+        "initial" : "B"
+    },
+
     "Preguntas" : {
-        "0": "The number of millions of residents of the country is: ", 
-        "1": "The country is on the continent: ",
+        "0": "What is the country if the millions of residents of the country are ", 
+        "1": "What is the country if it belongs to the continent ",
         "2":{
-            "0":"The country does not have a coast",
-            "1":"The country have coast"
+            "0":"What is the country if we tell you that it is a non-coastal country? ",
+            "1":"What is the country if we tell you that it is a coastal country "
         }, 
         "3": "",
-        "4": "The capital of the country begins with the letter: "
+        "4": "What is the country if the initial of the capital is: "
     }
 
     
