@@ -5,6 +5,8 @@ body{
     background-position: center;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0;
 }
 
 #container{
@@ -17,6 +19,7 @@ body{
     margin: auto;
     background-color:rgba(255, 255, 255, 0.7);
     box-shadow: 7px 7px black;
+    padding: 0 5rem;    
 }
 
 #title{
@@ -68,4 +71,27 @@ body{
   }
 
 
+#winDescription{
+    font-family:'Lilita One', cursiv;
+    font-size: 30px;
+    color: darkgreen;
+    text-shadow: 0 0 25px greenyellow;
+}
+#countryReveal{
+    font-family: 'Bubblegum Sans', cursive;
+}
 
+#winHtml h3{
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+#loseDescription{
+    font-family:'Lilita One', cursiv;
+    font-size: 30px;
+    color: darkred;
+    text-shadow: 0 0 25px red;
+}
+
+.scores{
+    font-family: 'Bubblegum Sans', cursive;
+}
