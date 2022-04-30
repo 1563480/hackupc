@@ -1,0 +1,66 @@
+var auxiliar = {
+    "0":{
+        "country" : "Spain", 
+        "capital": "Madrid",
+        "habitants": 47.35 ,
+        "continent": "Europa",
+        "costa": 0,
+        "inicial" : "M",  
+    } ,
+    
+    "1":{
+        "country": "Uruguay",
+        "capital": "Montevideo",
+        "habitants": 3.474 ,
+        "continent": "Amèrica del sur",
+        "costa": 1,
+        "inicial" : "M",         
+    } ,
+
+    "2":{
+        "country": "Estonia", 
+        "capital": "Tallin",
+        "habitants": 1.331 ,
+        "continent": "Europa",
+        "costa": 1,
+        "inicial" : "T"
+    } , 
+
+    "3":{
+        "country": "Italy",
+        "capital": "Roma",
+        "habitants": 59.55 ,
+        "continent": "Europa",
+        "costa": 1,
+        "inicial" : "R"
+    } , 
+
+    "4":{
+        "country": "Japan",
+        "capital": "Tokio",
+        "habitants": 125.8 ,
+        "continent": "Asia",
+        "costa": 1,
+        "inicial" : "T"
+    },
+    "5":{
+        "country": "Chad",
+        "capital": "Yamena",
+        "habitants": 16.43,
+        "continent": "Africa",
+        "costa": 0,
+        "inicial" : "Y"
+    },
+    "Preguntas" : {
+        "0": "The number of millions of residents of the country is: ", 
+        "1": "The country is on the continent: ",
+        "2":{
+            "0":"The country does not have a coast",
+            "1":"The country have coast"
+        }, 
+        "3": "",
+        "4": "The capital of the country begins with the letter: "
+    }
+
+    
+}
