@@ -17,4 +17,4 @@ To run this project, simply clone the repository to your local machine and open 
 You can play it online at: https://countryguesser.netlify.app/
 
 ## Credits
-This project was developed by Marc Cives, Eric Caballer and me during the HackUPC 2022 event.
+This project was developed by Marc Cives, Eric Caballer and myself during the HackUPC 2022 event.
